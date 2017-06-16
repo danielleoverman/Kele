@@ -16,6 +16,7 @@ class Kele
      response = self.class.get(api_url("mentors/#{mentor_id}/student_availability"), headers: { "authorization" => @auth_token })
      @mentor_availability = JSON.parse(response.body)
   end
+  
 
   def api_url(endpoint)
     "https://www.bloc.io/api/v1/#{endpoint}"
