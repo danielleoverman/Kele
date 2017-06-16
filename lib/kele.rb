@@ -13,9 +13,7 @@ class Kele
     @auth_token = response["auth_token"]
   end
 
-  private
-
-  def get_me (auth_token)
+  def get_me
     response = self.class.get(api_url('users/me'), headers: { "authorization" => @auth_token })
     JSON.parse(response.body)
   end
