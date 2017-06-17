@@ -3,3 +3,5 @@ source 'https://rubygems.org'
 gemspec
 
 # gem "rails"
+
+gem 'json', '~> 2.1'
